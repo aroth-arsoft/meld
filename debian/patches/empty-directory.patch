@@ -1,0 +1,34 @@
+From 25d399041403ea600091dcada31ed87e4d23555d Mon Sep 17 00:00:00 2001
+From: Boruch Baum <boruch_baum@gmx.com>
+Date: Mon, 23 Sep 2013 16:16:12 +0200
+Subject: [PATCH] Remove reference to directory not used
+
+---
+ Makefile |    4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index c6d281a..aee4598 100644
+--- a/Makefile
++++ b/Makefile
+@@ -41,7 +41,6 @@ install: $(addsuffix .install,$(SPECIALS)) meld.desktop meld.xml
+ 		$(DESTDIR)$(sharedir)/appdata \
+ 		$(DESTDIR)$(sharedir)/applications \
+ 		$(DESTDIR)$(sharedir)/mime/packages \
+-		$(DESTDIR)$(sharedir)/pixmaps \
+ 		$(DESTDIR)$(sharedir)/icons/hicolor/16x16/apps \
+ 		$(DESTDIR)$(sharedir)/icons/hicolor/22x22/apps \
+ 		$(DESTDIR)$(sharedir)/icons/hicolor/32x32/apps \
+@@ -133,8 +132,7 @@ uninstall:
+ 		$(bindir)/meld \
+ 		$(sharedir)/applications/meld.desktop \
+ 		$(sharedir)/appdata/meld.appdata.xml \
+-		$(sharedir)/mime/packages/meld.xml \
+-		$(sharedir)/pixmaps/meld.png
++		$(sharedir)/mime/packages/meld.xml
+ 	$(MAKE) -C po uninstall
+ 	$(MAKE) -C help uninstall
+ 	$(update_mime_database)
+-- 
+1.7.10.4
+
