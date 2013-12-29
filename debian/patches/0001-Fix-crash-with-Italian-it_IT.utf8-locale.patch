@@ -1,0 +1,25 @@
+From 4c476e8ceabe4453b1f1f374c6ba469c9bc524f3 Mon Sep 17 00:00:00 2001
+From: Balint Reczey <balint@balintreczey.hu>
+Date: Thu, 26 Dec 2013 20:23:52 +0100
+Subject: [PATCH] Fix crash with Italian (it_IT.utf8) locale
+
+---
+ po/it.po |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/po/it.po b/po/it.po
+index ba1647b..d3e0d63 100644
+--- a/po/it.po
++++ b/po/it.po
+@@ -1752,7 +1752,7 @@ msgid ""
+ "Not present"
+ msgstr ""
+ "Ignorato:Non in revisione:::Errore::Aggiunto recentemente:Modificato:"
+-"Conflitto:Rimosso:Mancante"
++"Conflitto:Rimosso:Mancante:Non presente"
+ 
+ #: ../meld/vc/cvs.py:231
+ #, python-format
+-- 
+1.7.10.4
+

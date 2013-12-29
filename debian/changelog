@@ -1,3 +1,35 @@
+meld (1.8.3-2.1~aroth~ppa) saucy; urgency=low
+
+  * backport latest version
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Sun, 29 Dec 2013 15:34:22 +0100
+
+meld (1.8.3-2) unstable; urgency=low
+
+  * Fix crash with Italian locale
+
+ -- Balint Reczey <balint@balintreczey.hu>  Thu, 26 Dec 2013 22:00:31 +0100
+
+meld (1.8.3-1) unstable; urgency=low
+
+  * New upstream release:
+    - Fix subdirectory comparisons for Subversion 1.6 (Ben Ross)
+    - Fix git status parsing for some statuses (Tom Scytale)
+    - Don't disable updating when syncpoints aren't yet active (Kai Willadsen)
+    - Fix modifying column properties causing crashes when using .ini config
+      backend (Kai Willadsen)
+
+ -- Balint Reczey <balint@balintreczey.hu>  Sun, 15 Dec 2013 01:46:21 +0100
+
+meld (1.8.2-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Fix regression selecting Subversion 1.6 repositories
+    - Updated translations
+    - Minor fixes
+
+ -- Balint Reczey <balint@balintreczey.hu>  Fri, 18 Oct 2013 10:27:59 +0200
+
 meld (1.8.2-0.1~aroth~ppa1) saucy; urgency=low
 
   * New upstream release 1.8.2
