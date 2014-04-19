@@ -2,18 +2,22 @@
 # 
 # Modifications should be made to debian/control.in instead.
 # This file is regenerated automatically in the clean target.
+
 Source: meld
 Section: gnome
 Priority: optional
 Maintainer: Balint Reczey <balint@balintreczey.hu>
 Build-Depends: debhelper (>= 9),
                cdbs (>= 0.4.90~),
+               python (>=2.6.6-3~),
+               dh-python,
+               itstool,
+               libxml2-utils,
                gnome-pkg-tools
-Build-Depends-Indep: python (>=2.6.6-3~),
-                     intltool,
+Build-Depends-Indep: intltool,
                      scrollkeeper
 Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Standards-Version: 3.9.4
+Standards-Version: 3.9.5
 Vcs-Svn: svn://svn.debian.org/pkg-gnome/packages/unstable/meld
 Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/packages/unstable/meld/
 Homepage: http://meldmerge.org
@@ -23,14 +27,15 @@ Package: meld
 Architecture: all
 Depends: ${python:Depends},
          ${misc:Depends},
-         python-gtk2 (>= 2.14),
-         python-glade2 (>= 2.14),
-         python-gobject-2 (>= 2.16),
+         libgtk-3-0 (>= 3.6),
+         python-gi (>= 3.8),
+         libgtksourceview-3.0-1 (>= 3.6),
+         gir1.2-gtksource-3.0 (>= 3.6),
+         python-gi-cairo,
+         libcanberra-gtk3-module,
          patch
 Recommends: yelp,
-            python-gnome2,
-            python-gconf,
-            python-gtksourceview2 (>= 2.4)
+            gir1.2-gconf-2.0,
 Description: graphical tool to diff and merge files
  Meld  is  a  graphical  diff viewer and merge application for the Gnome
  desktop.  It supports 2 and 3-file diffs,  recursive  directory  diffs,

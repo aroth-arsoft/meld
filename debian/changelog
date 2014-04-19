@@ -1,3 +1,54 @@
+meld (3.11.0-1.1~aroth~ppa1) saucy; urgency=low
+
+  * testing version 3.11.0 on saucy
+
+ -- Andreas Roth <aroth@arsoft-online.com>  Sat, 19 Apr 2014 19:14:01 +0200
+
+meld (3.11.0-1) experimental; urgency=low
+
+  * New upstream development release:
+    - Features:
+      * Supporting hiding empty filtered folders in folder comparison
+        (Gianni Trovisi, Kai Willadsen)
+      * Notify user when files change externally in file comparison
+        (Kai Willadsen)
+      * Use standard GIO file trash handling when deleting files (Kai Willadsen)
+      * Newly written Mallard-based help (Kai Willadsen)
+    - User interface updates:
+      * Support GNOME 3-style application menu (Kai Willadsen)
+      * Visual improvements to several icons (Kai Willadsen)
+      * Update Meld's colour scheme (Kai Willadsen)
+      * Many visual styling updates, layout tweaks and UI polish (Kai Willadsen)
+    - Internal changes:
+      * Port to GObject introspection, GTK+ 3, GApplication, GSettings and other
+        new things starting with 'G' (Kai Willadsen)
+      * Port to distutils, based on python-distutils-extra (Kai Willadsen)
+      * Move to using CSS for styling and colour definitions (Kai Willadsen)
+      * Update to use more modern GTK widgets (Peter Tyser, Kai Willadsen)
+      * Move a lot of extra UI construction into glade/UI files (Kai Willadsen)
+      * Make several custom icons themeable (Kai Willadsen)
+      * Make Meld a single-instance application, and add support for multiple
+        windows (Kai Willadsen)
+  * Update dependencies to use GTK 3 libraries and GObject introspection,
+    namely libgtk-3-0, python-gi, libgtksourceview-3.0-1,
+    gir1.2-gtksource-3.0, python-gi-cairo and libcanberra-gtk3-module
+  * Depend on GtkSourceView instead of just recommending it
+  * Build depend on dh-python, itstool and libxml2-utils
+  * Drop obsolete empty-directory.patch and sourceview-package.patch patches
+
+ -- Balint Reczey <balint@balintreczey.hu>  Thu, 23 Jan 2014 21:03:05 +0100
+
+meld (1.8.4-1) unstable; urgency=low
+
+  * New upstream release:
+    - Fix crash when scanning CVS-only folders (Kai Willadsen)
+    - Fix crash on Windows when missing cdll.intl (Bartosz Dziewoński)
+    - Fix crash with Italian (it_IT.utf8) locale (Balint Reczey)
+    - Updated translations
+  * Drop obsolete 0001-Fix-crash-with-Italian-it_IT.utf8-locale.patch
+
+ -- Balint Reczey <balint@balintreczey.hu>  Thu, 23 Jan 2014 20:46:42 +0100
+
 meld (1.8.3-2.1~aroth~ppa) saucy; urgency=low
 
   * backport latest version
