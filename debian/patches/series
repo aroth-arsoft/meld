@@ -1,4 +1,2 @@
-empty-directory.patch
-sourceview-package.patch
-python-path.patch
-0001-Fix-crash-with-Italian-it_IT.utf8-locale.patch
+01_skip_compile_schema_and_icon_cache_update.patch
+remove_install_layout.patch

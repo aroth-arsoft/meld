@@ -1,0 +1,13 @@
+--- meld-3.11.1/meld/build_helpers.py.orig	2014-05-26 11:48:38.011688842 +0700
++++ meld-3.11.1/meld/build_helpers.py	2014-05-26 11:48:55.187687955 +0700
+@@ -62,8 +62,8 @@
+     ]
+ 
+     def __init__(self, *args, **kwargs):
+-        self.no_update_icon_cache = False
+-        self.no_compile_schemas = False
++        self.no_update_icon_cache = True
++        self.no_compile_schemas = True
+         distutils.dist.Distribution.__init__(self, *args, **kwargs)
+ 
+ 
